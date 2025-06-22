@@ -51,147 +51,42 @@
             </ul>
         </aside>
 
-        <main style="flex: 1; padding: 30px; margin-left: 250px; margin-top: 80px;">
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <!-- Card 1 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
-                    <img src="asset/makanan/soto.jpeg" alt="Soto"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Soto Lamongan</p>
-                            <p style="margin: 0;">Rp 10.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px; ">
-                        </div>
-                    </div>
-                </div>
+       <main style=" padding: 30px; margin-left: 250px; margin-top: 80px; width:100%;">
+         <div style="margin-left: 780px;">
+            <button class="btn btn-primary mb-3" style="background-color: #f7fb12; border-color: #f7fb12; color: black; font-weight: bold;">
+                <i class="bi bi-plus"></i> Tambah Makanan
+            </button>
+         </div>
+            <table class="table table-bordered" style="width: 100%; background-color: white;">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Makanan</th>
+                        <th scope="col">Nama Makanan</th>
+                        <th scope="col">Stok</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MKNahbdawdh</td>
+                        <td>Bakso</td>
+                        <td>Rp. 11.000</td>
+                        <td><img src="asset/makanan/bakso.png" style="width: 100px; height: 100px;"></td>
+                        <td style="font-size: 22px;"><i class="bi bi-pencil-square"></i><i class="bi bi-trash ms-2"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MKNhwbfwhfjd</td>
+                        <td>Soto</td>
+                        <td>Rp. 11.000</td>
+                        <td><img src="asset/makanan/soto.jpeg" style="width: 100px; height: 100px;"></td>
+                        <td style="font-size: 22px;"><i class="bi bi-pencil-square"></i><i class="bi bi-trash ms-2"></i></td>
+                    </tr>
 
-                <!-- Card 2 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1);">
-                    <img src="asset/makanan/nasgor.jpg" alt="Nasi Goreng"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Nasi Goreng Telur</p>
-                            <p style="margin: 0;">Rp 12.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/makanan/bakso.png" alt="Bakso"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Beng Beng</p>
-                            <p style="margin: 0;">Rp 11.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/jajan/komo.jpeg" alt="Komo" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Komo</p>
-                            <p style="margin: 0;">Rp 500</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/jajan/oreo.jpeg" alt="Oreo" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Oreo</p>
-                            <p style="margin: 0;">Rp 10.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/jajan/qtela.jpeg" alt="Qtela"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Qtela</p>
-                            <p style="margin: 0;">Rp 6.500</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 7 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/minuman/aires.jpeg" alt="Aires"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Air Es</p>
-                            <p style="margin: 0;">Rp 1.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 8 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/minuman/esjeruk.jpeg" alt="Esjeruk"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Es Jeruk</p>
-                            <p style="margin: 0;">Rp 4.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div
-                    style="width: 300px; height: 320px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/minuman/esteh.jpeg" alt="Esteh"
-                        style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="background-color: yellow; padding: 20px; height: 200px; display: flex;">
-                        <div style="width: 230px;">
-                            <p style="margin-top: 20px; font-weight: bold;">Es teh</p>
-                            <p style="margin: 0;">Rp 2.000</p>
-                        </div>
-                        <div
-                            style="width: 30px; height: 30px; background-color: red; border-radius: 50%; display: inline-block; margin-top: 50px;">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                </tbody>
         </main>
 
     </div>
