@@ -101,7 +101,7 @@
                         <p style="padding: 20px; font-weight: bold;">Beng Beng</p>
                     </div>
                 </div>
-                
+
             </div>
 
             <h2 style="margin-bottom: 20px;">Jajanan</h2>
@@ -201,16 +201,30 @@
                 </div>
 
 
-                <a href="#" style="text-decoration: none;">
-                    <div style="margin-top: 30px; background-color: #f7fb12; width: 200px;  text-align: center; ">
-                        <p style="padding: 10px 20px; font-size: 24px; color: green; font-weight: bold;">Rp. 30.000</p>
-                    </div>
-            </div></a>
+                <div id="btnBayar"
+                    style="margin-top: 30px; background-color: #f7fb12; width: 200px; text-align: center; cursor: pointer;">
+                    <p style="padding: 10px 20px; font-size: 24px; color: green; font-weight: bold;">Rp. 30.000</p>
+                </div>
+
+            </div>
 
         </main>
 
     </div>
+    <script>
+        document.getElementById('btnBayar').addEventListener('click', function () {
+            const metode = document.getElementById('metode').value;
 
+            if (metode === 'qris') {
+                window.location.href = 'qris.html';
+            } else if (metode === 'cash') {
+                window.location.href = 'cash.html';
+            } else {
+                alert('Silakan pilih metode pembayaran terlebih dahulu.');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
