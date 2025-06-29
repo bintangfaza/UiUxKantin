@@ -34,20 +34,20 @@
             </div>
             <ul style="list-style-type: none; padding: 0; color: white; margin-left: 15px;">
                 <li style="margin-bottom: 20px; ">
-                    <i class="bi bi-cart2"></i>
+                    <i class="bi bi-cart2" style="font-size: 25px;"></i>
                     <a href="pesanan.html" style="text-decoration: none; color: white; margin-left: 10px;">Pesanan</a>
                 </li>
                 <li style="margin-bottom: 20px;">
-                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-bag" style="font-size: 25px;"></i>
                     <a href="stok.html" style="text-decoration: none; color: white; margin-left: 10px;">Stok Makanan</a>
                 </li>
                 <li style="margin-bottom: 20px;">
-                    <i class="bi bi-receipt-cutoff"></i>
+                    <i class="bi bi-receipt-cutoff" style="font-size: 25px;"></i>
                     <a href="riwayat_transaksi.html"
                         style="text-decoration: none; color: white; margin-left: 10px;">Riwayat Transaksi</a>
                 </li>
                 <li>
-                    <i class="bi bi-journal-bookmark-fill"></i>
+                    <i class="bi bi-journal-bookmark-fill" style="font-size: 25px;"></i>
                     <a href="laporan.html" style="text-decoration: none; color: white; margin-left: 10px;">Laporan
                         Keuangan</a>
                 </li>
@@ -58,8 +58,9 @@
             <h2 style="margin-bottom: 20px;">Makanan</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 10px; margin-right: 200px;">
                 <!-- Card 1 -->
-                <div
+                <div class="card-makanan" data-nama="Soto Lamongan" data-harga="10000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
+
                     <img src="asset/makanan/soto.jpeg" alt="Soto"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="background-color: yellow; text-align: center; padding: 15px; ">
@@ -68,7 +69,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div
+                <div class="card-makanan" data-nama="Nasi Goreng Telur" data-harga="12000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1);">
                     <img src="asset/makanan/nasgor.jpg" alt="Nasi Goreng"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -78,7 +79,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div
+                <div class="card-makanan" data-nama="Bakso" data-harga="11000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
                     <img src="asset/makanan/bakso.png" alt="Bakso"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -87,21 +88,21 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div
+                <div class="card-makanan" data-nama="Mie Goreng" data-harga="7000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/makanan/bakso.png" alt="Bakso"
+                    <img src="asset/makanan/mie_goreng.jpeg" alt="Bakso"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="background-color: yellow;  text-align: center;">
-                        <p style="padding: 20px; font-weight: bold;">Beng Beng</p>
+                        <p style="padding: 20px; font-weight: bold;">Mie Goreng</p>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div
+                <div class="card-makanan" data-nama="Nasi Ayam Goreng" data-harga="12000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: white;">
-                    <img src="asset/makanan/bakso.png" alt="Bakso"
+                    <img src="asset/makanan/nasi ayam.jpg" alt="Bakso"
                         style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="background-color: yellow;  text-align: center;">
-                        <p style="padding: 20px; font-weight: bold;">Beng Beng</p>
+                        <p style="padding: 20px; font-weight: bold;">Nasi Ayam Goreng</p>
                     </div>
                 </div>
 
@@ -110,7 +111,7 @@
             <h2 style="margin-bottom: 20px;">Jajanan</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 10px;">
                 <!-- Card 4 -->
-                <div
+                <div class="card-makanan" data-nama="Komo" data-harga="500"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/jajan/komo.jpeg" alt="Soto" style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="background-color: yellow; text-align: center; padding: 15px; ">
@@ -119,7 +120,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div
+                <div class="card-makanan" data-nama="Oreo" data-harga="5000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/jajan/oreo.jpeg" alt="Oreo" style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="background-color: yellow; text-align: center; padding: 15px; ">
@@ -128,7 +129,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div
+                <div class="card-makanan" data-nama="Qtela" data-harga="7000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/jajan/qtela.jpeg" alt="Qtela"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
                 <!-- Card 7 -->
-                <div
+                <div class="card-makanan" data-nama="Beng Beng" data-harga="2000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/jajan/bengbeng.jpeg" alt="Qtela"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -152,7 +153,7 @@
             <h2 style="margin-bottom: 20px;">Minuman</h2>
             <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 10px;">
                 <!-- Card 8-->
-                <div
+                <div class="card-makanan" data-nama="Air Es" data-harga="1000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/minuman/aires.jpeg" alt="Aires"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -163,7 +164,7 @@
                 </div>
 
                 <!-- Card 9 -->
-                <div
+                <div class="card-makanan" data-nama="Es Jeruk" data-harga="4000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/minuman/esjeruk.jpeg" alt="Esjeruk"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -174,7 +175,7 @@
                 </div>
                 <!-- Card 10 -->
 
-                <div
+                <div class="card-makanan" data-nama="Es Teh" data-harga="2000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/minuman/esteh.jpeg" alt="Esteh"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -185,7 +186,7 @@
                 </div>
                 <!-- Card 11 -->
 
-                <div
+                <div class="card-makanan" data-nama="Nutrisari" data-harga="3000"
                     style="width: 160px; height: 214px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 8px rgba(0,0,0,0.1); background-color: black;">
                     <img src="asset/minuman/nutrisari.jpeg" alt="Nutrisari"
                         style="width: 100%; height: 150px; object-fit: cover;">
@@ -200,28 +201,10 @@
             <div
                 style="width: 250px; background-color: white; padding: 20px; box-shadow: -2px 0 10px rgba(0,0,0,0.1); position: fixed; top: 80px; right: 0; height: calc(100vh - 80px); overflow-x: scroll;">
                 <h5 style="font-weight: bold; margin-bottom: 20px;">Pesanan</h5>
-
-                <div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Soto<br>2 x 10.000</p>
-                        <i class="bi bi-trash3" style="font-size: 25px;"></i>
-                    </div>
-                    <hr>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Es Jeruk<br>2 x 4.000</p>
-                        <i class="bi bi-trash3" style=" font-size: 25px;"></i>
-                    </div>
-                    <hr>
-                    <div style="display: flex; justify-content: space-between;">
-                        <p>Bang Bang<br>1 x 2.000</p>
-                        <i class="bi bi-trash3" style="font-size: 25px;"></i>
-                    </div>
-                    <hr>
-                </div>
-
+                
                 <!-- Dropdown Metode Pembayaran -->
                 <div style="margin-top: 40px;">
-                    <label for="metode" style="font-weight: bold;">Metode Pembayaran</label>
+                    <label  style="font-weight: bold;">Metode Pembayaran</label>
                     <select id="metode" class="form-select mt-2" aria-label="Metode Pembayaran">
                         <option selected disabled>Pilih Metode</option>
                         <option value="qris">QRIS</option>
@@ -238,6 +221,31 @@
             </div>
 
         </main>
+        <!-- Modal Pesan -->
+        <div class="modal fade" id="modalPesan" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Pesan Makanan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Nama:</strong> <span id="labelNamaMakanan"></span></p>
+                        <p><strong>Harga:</strong> Rp <span id="labelHargaMakanan"></span></p>
+                        <form id="formPesan">
+                            <div class="mb-3">
+                                <label class="form-label">Jumlah</label>
+                                <input type="number" class="form-control" id="jumlahMakanan" required min="1" value="1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
     <script>
@@ -253,6 +261,62 @@
             }
         });
     </script>
+    <script>
+        const daftarPesanan = [];
+        let currentNama = '';
+        let currentHarga = 0;
+
+        // code klik card makanan
+        document.querySelectorAll('.card-makanan').forEach(card => {
+            card.addEventListener('click', () => {
+                currentNama = card.getAttribute('data-nama');
+                currentHarga = parseInt(card.getAttribute('data-harga'));
+
+                document.getElementById('labelNamaMakanan').textContent = currentNama;
+                document.getElementById('labelHargaMakanan').textContent = currentHarga.toLocaleString();
+                document.getElementById('jumlahMakanan').value = 1;
+
+                const modal = new bootstrap.Modal(document.getElementById('modalPesan'));
+                modal.show();
+            });
+        });
+
+        // Submit form pesanan
+        document.getElementById('formPesan').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const jumlah = parseInt(document.getElementById('jumlahMakanan').value);
+            daftarPesanan.push({ nama: currentNama, harga: currentHarga, jumlah });
+            renderPesanan();
+            bootstrap.Modal.getInstance(document.getElementById('modalPesan')).hide();
+        });
+
+        function renderPesanan() {
+            const container = document.querySelector('.modal').closest('body').querySelector('main').querySelector('div[style*="right: 0"] > div');
+            container.innerHTML = ''; // Bersihkan
+
+            let total = 0;
+            daftarPesanan.forEach((item, index) => {
+                const totalItem = item.harga * item.jumlah;
+                total += totalItem;
+
+                container.innerHTML += `
+                <div style="display: flex; justify-content: space-between;">
+                    <p>${item.nama}<br>${item.jumlah} x ${item.harga.toLocaleString()}</p>
+                    <i class="bi bi-trash3" style="font-size: 25px; cursor:pointer;" onclick="hapusPesanan(${index})"></i>
+                </div>
+                <hr>
+            `;
+            });
+
+            document.getElementById('btnBayar').querySelector('p').textContent = `Rp. ${total.toLocaleString()}`;
+        }
+
+        function hapusPesanan(index) {
+            daftarPesanan.splice(index, 1);
+            renderPesanan();
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
