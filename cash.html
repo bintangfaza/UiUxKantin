@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran Cash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
         .btn-cash {
             width: 80px;
             height: 80px;
@@ -15,26 +21,44 @@
             border: none;
             background-color: red;
             color: white;
-            font-size: 20px;
+            font-size: 24px;
             cursor: pointer;
         }
 
         .btn-cash:hover {
             background-color: darkred;
         }
+
+
+        .amount-box {
+            background-color: red;
+            color: white;
+            padding: 30px 50px;
+            border-radius: 20px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .grid-buttons {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 80px;
+            margin-bottom: 30px;
+            justify-items: center;
+        }
     </style>
 
 </head>
 
-<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
-
+<body>
     <!-- Header -->
     <header
-        style="z-index: 1; position: fixed; background-color: #ff0000; padding: 5px;  height: 80px; width: 100%; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); display: flex;">
-        <h1 style="color: #000000; margin-left: 570px; margin-top: 15px;">Cash</h1>
-         <a href="index.html"
-            style="text-decoration: none; color: black; margin-left: auto; margin-right: 20px; font-size: 20px; margin-top: 20px;">
-            <h2>Logout</h2>
+        style="z-index: 1; position: fixed; background-color: #ff0000; padding: 5px; height: 80px; width: 100%; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); display: flex; font-family: 'Poppins', sans-serif;">
+        <h1 style="color: #000000; margin-left: 540px; margin-top: 15px; font-size: 30px; font-weight: bold;">Pembayaran Cash</h1>
+        <a href="index.html"
+            style="text-decoration: none; color: black; margin-left: auto; margin-right: 20px;  margin-top: 20px; ">
+            <h1 style="font-size: 20px; font-weight: bold;">Logout</h1>
         </a>
     </header>
 
@@ -42,42 +66,44 @@
 
         <!-- Sidebar -->
         <aside
-            style="width: 250px; background-color: #ff0000; height: calc(100vh - 80px); padding: 20px 10px; box-sizing: border-box; position:fixed; top: 80px;">
+            style="width: 250px; background-color: #ff0000; height: calc(100vh - 80px); padding: 20px 10px; box-sizing: border-box; position: fixed; top: 80px;">
             <div style="text-align: center; margin-bottom: 30px; display: flex;">
-                <a href="dashboard.html" style="text-decoration: none; color: white;"><img src="asset/logo1.jpg"
-                        alt="Logo" style="width: 60px; height: 60px; border-radius: 50%;"></a>
+                <a href="dashboard.html" style="text-decoration: none; color: white;">
+                    <img src="asset/logo1.jpg" alt="Logo" style="width: 60px; height: 60px; border-radius: 50%;" />
+                </a>
                 <p style="margin-top: 10px; font-weight: bold; color: white;">Kantin Gor Hassanudin</p>
             </div>
             <ul style="list-style-type: none; padding: 0; color: white; margin-left: 15px;">
-                <li style="margin-bottom: 20px; ">
-                    <i class="bi bi-cart2"></i>
+                <li style="margin-bottom: 20px;">
+                    <i class="bi bi-cart2" style="font-size: 25px;"></i>
                     <a href="pesanan.html" style="text-decoration: none; color: white; margin-left: 10px;">Pesanan</a>
                 </li>
                 <li style="margin-bottom: 20px;">
-                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-bag" style="font-size: 25px;"></i>
                     <a href="stok.html" style="text-decoration: none; color: white; margin-left: 10px;">Stok Makanan</a>
                 </li>
                 <li style="margin-bottom: 20px;">
-                    <i class="bi bi-receipt-cutoff"></i>
+                    <i class="bi bi-receipt-cutoff" style="font-size: 25px;"></i>
                     <a href="riwayat_transaksi.html"
                         style="text-decoration: none; color: white; margin-left: 10px;">Riwayat Transaksi</a>
                 </li>
                 <li>
-                    <i class="bi bi-journal-bookmark-fill"></i>
+                    <i class="bi bi-journal-bookmark-fill" style="font-size: 25px;"></i>
                     <a href="laporan.html" style="text-decoration: none; color: white; margin-left: 10px;">Laporan
                         Keuangan</a>
                 </li>
             </ul>
         </aside>
+
+        <!-- Main -->
         <main
-            style="padding: 30px; margin-left: 250px; margin-top: 60px; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div
-                style="background-color: #ff0000; color: white; padding: 30px 50px; border-radius: 20px; text-align: center; margin-bottom: 30px; width: 100%;">
+            style="padding: 30px; margin-left: 250px; margin-top: 100px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <div class="amount-box">
                 <p style="font-weight: bold;">Jumlah Yang Dibayarkan</p>
                 <h2 id="amountDisplay" style="font-size: 30px;">RP 0</h2>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 50%); gap: 20px; margin-bottom: 30px; ">
+            <div class="grid-buttons">
                 <button class="btn-cash" onclick="appendAmount('1')">1</button>
                 <button class="btn-cash" onclick="appendAmount('2')">2</button>
                 <button class="btn-cash" onclick="appendAmount('3')">3</button>
@@ -92,13 +118,45 @@
                 <button class="btn-cash" onclick="deleteLast()"><i class="bi bi-backspace"></i></button>
             </div>
 
-            <button onclick="submitAmount()"
-                style="background-color: #ff0000; color: white; padding: 12px 40px; border: none; border-radius: 20px; font-size: 16px;">Kirim
-                Sekarang</button>
+            <a href="konfirmasi_pembayaran.html" style="text-decoration: none;"><button
+                    style="background-color: red; color: white; padding: 12px 40px; border: none; border-radius: 20px; font-size: 16px;">
+                    Kirim Sekarang
+                </button>
+            </a>
         </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script -->
+    <script>
+        let currentAmount = "";
+
+        function appendAmount(value) {
+            if (value === '-' && currentAmount.length === 0) return;
+            currentAmount += value;
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            currentAmount = currentAmount.slice(0, -1);
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            const display = document.getElementById("amountDisplay");
+            let cleanAmount = currentAmount.replace(/\D/g, '');
+            if (cleanAmount === "") {
+                display.textContent = "RP 0";
+            } else {
+                display.textContent = "RP " + parseInt(cleanAmount).toLocaleString('id-ID');
+            }
+        }
+
+        function submitAmount() {
+            const cleanAmount = currentAmount.replace(/\D/g, '');
+            alert("Jumlah yang dibayarkan: Rp " + parseInt(cleanAmount || 0).toLocaleString('id-ID'));
+            // proses selanjutnya di sini
+        }
+    </script>
 </body>
 
 </html>
